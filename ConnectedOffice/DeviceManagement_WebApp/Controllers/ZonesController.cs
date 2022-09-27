@@ -1,12 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using DeviceManagement_WebApp.Data;
 using DeviceManagement_WebApp.Models;
+using DeviceManagement_WebApp.Repository;
 
 namespace DeviceManagement_WebApp.Controllers
 {
@@ -18,7 +17,13 @@ namespace DeviceManagement_WebApp.Controllers
         {
             _context = context;
         }
-
+        // Get Products
+        public async Task<IActionResult> Index()
+        {
+            ZoneRepo ZoneRepo = new ZoneRepo();
+            var results = ZoneRepo.Getall();
+            return View(results);
+        }
         // GET: Zones
         public async Task<IActionResult> Index()
         {
