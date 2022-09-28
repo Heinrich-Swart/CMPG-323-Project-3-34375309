@@ -12,5 +12,7 @@ namespace DeviceManagement_WebApp.InterfaceRepo
     public interface ICategoryRepo : IGenericRepo<Category>
     {
         Category GetMostRecentCategory();
+
+
     }
 }

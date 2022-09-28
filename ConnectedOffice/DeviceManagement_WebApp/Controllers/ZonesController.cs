@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Linq;
+using System;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using DeviceManagement_WebApp.Data;
 using DeviceManagement_WebApp.Models;
 using DeviceManagement_WebApp.Repository;
+using DeviceManagement_WebApp.InterfaceRepo;
 
 namespace DeviceManagement_WebApp.Controllers
 {
@@ -17,13 +20,7 @@ namespace DeviceManagement_WebApp.Controllers
         {
             _context = context;
         }
-        // Get Products
-        public async Task<IActionResult> Index()
-        {
-            ZoneRepo ZoneRepo = new ZoneRepo();
-            var results = ZoneRepo.Getall();
-            return View(results);
-        }
+
         // GET: Zones
         public async Task<IActionResult> Index()
         {
@@ -151,3 +148,4 @@ namespace DeviceManagement_WebApp.Controllers
         }
     }
 }
+

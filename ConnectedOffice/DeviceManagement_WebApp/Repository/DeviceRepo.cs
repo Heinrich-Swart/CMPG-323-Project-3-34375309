@@ -1,18 +1,23 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using DeviceManagement_WebApp.Data;
+using DeviceManagement_WebApp.InterfaceRepo;
 using DeviceManagement_WebApp.Models;
+using DeviceManagement_WebApp.Repository;
+using Microsoft.AspNetCore.Mvc.Controllers;
 
 namespace DeviceManagement_WebApp.Repository
 {
-    public class DeviceRepo
+    public class DeviceRepo : GenericRepo<Device>, IDeviceRepo
     {
-        private readonly ConnectedOfficeContext _context = new ConnectedOfficeContext();
-
-        //Get:Product
-        public List<Device> Getall()
+        public DeviceRepo(ConnectedOfficeContext context) : base(context)
         {
-            return _context.Device.ToList();
+
+        }
+
+        public Device GetMostRecentDevice()
+        {
+            return _context.Device.OrderByDescending(device => device.DateCreated).FirstOrDefault();
         }
     }
 }

@@ -19,5 +19,7 @@ namespace DeviceManagement_WebApp.Repository
         {
             return _context.Category.OrderByDescending(category => category.DateCreated).FirstOrDefault();
         }
+        
+
     }
 }

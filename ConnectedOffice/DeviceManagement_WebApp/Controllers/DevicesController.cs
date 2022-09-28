@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using DeviceManagement_WebApp.Data;
 using DeviceManagement_WebApp.Models;
 using DeviceManagement_WebApp.Repository;
+using DeviceManagement_WebApp.InterfaceRepo;
 
 namespace DeviceManagement_WebApp.Controllers
 {
@@ -17,14 +18,6 @@ namespace DeviceManagement_WebApp.Controllers
         public DevicesController(ConnectedOfficeContext context)
         {
             _context = context;
-        }
-
-        // Get Products
-        public async Task<IActionResult> Index()
-        {
-            DeviceRepo DeviceRepo = new DeviceRepo();
-            var results = DeviceRepo.Getall();
-            return View(results);
         }
 
         // GET: Devices
