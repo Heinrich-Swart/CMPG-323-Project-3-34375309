@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-# CMPG-323-Project-3-34375309
-=======
 # CMPG-323-Project-3-34375309
 
 # Repositories
@@ -28,4 +25,3 @@ The program is created to retrieve, display or edit data from a hosted database 
  # "Not sure"
 
  I am not sure if I implemented the Generic Repository and Generic Interface class in the correct manner, but when I tested everything, it was working as intended.
->>>>>>> Stashed changes
