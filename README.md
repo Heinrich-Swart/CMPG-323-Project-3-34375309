@@ -25,3 +25,7 @@ The program is created to retrieve, display or edit data from a hosted database 
  # "Not sure"
 
  I am not sure if I implemented the Generic Repository and Generic Interface class in the correct manner, but when I tested everything, it was working as intended
+ 
+ # How to use
+
+Users will require to register an email with a password, from there if they want to acces the app, they will need to log into using their email and password. From there they can add new data to Zone, Category and Device, aswell as remove any data or edit the data. It will auto update if they upload the data
