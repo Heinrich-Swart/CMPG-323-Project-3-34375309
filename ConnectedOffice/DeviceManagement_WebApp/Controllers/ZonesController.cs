@@ -10,6 +10,7 @@ using DeviceManagement_WebApp.Models;
 using DeviceManagement_WebApp.Repository;
 using DeviceManagement_WebApp.InterfaceRepo;
 
+//Zone controller
 namespace DeviceManagement_WebApp.Controllers
 {
     public class ZonesController : Controller

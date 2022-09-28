@@ -9,6 +9,7 @@ using DeviceManagement_WebApp.Models;
 using DeviceManagement_WebApp.Repository;
 using DeviceManagement_WebApp.InterfaceRepo;
 
+//Device controller
 namespace DeviceManagement_WebApp.Controllers
 {
     public class DevicesController : Controller

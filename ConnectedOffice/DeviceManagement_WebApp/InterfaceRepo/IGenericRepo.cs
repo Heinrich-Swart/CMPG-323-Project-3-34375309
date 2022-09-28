@@ -7,6 +7,7 @@ using DeviceManagement_WebApp.Data;
 using DeviceManagement_WebApp.Models;
 using DeviceManagement_WebApp.Repository;
 
+//Interface Genric Repository
 namespace DeviceManagement_WebApp.Repository
 {
     public interface IGenericRepo<T> where T : class

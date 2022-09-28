@@ -8,6 +8,7 @@ using DeviceManagement_WebApp.Models;
 using DeviceManagement_WebApp.Repository;
 using DeviceManagement_WebApp.InterfaceRepo;
 
+//Category Controller
 namespace DeviceManagement_WebApp.Controllers
 {
     public class CategoriesController : Controller

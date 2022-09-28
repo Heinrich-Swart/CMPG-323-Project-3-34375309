@@ -7,9 +7,10 @@ using DeviceManagement_WebApp.Data;
 using DeviceManagement_WebApp.Models;
 using DeviceManagement_WebApp.Repository;
 
-
+//Generic repository
 namespace DeviceManagement_WebApp.Repository
 {
+    //Category with the IGenericRepo
     public class GenericRepo<T> : IGenericRepo<T> where T : class
     {
         protected readonly ConnectedOfficeContext _context;
